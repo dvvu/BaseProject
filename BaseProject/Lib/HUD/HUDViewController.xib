@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HUDViewController" customModule="Ebates" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingImageView" destination="hwJ-rj-B3O" id="sZM-Fa-B45"/>
+                <outlet property="loadingMessageLabel" destination="BFi-o7-Kft" id="ChU-WN-WBr"/>
+                <outlet property="loadingMessageView" destination="yFu-fV-D8l" id="x84-SJ-rpX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFu-fV-D8l" customClass="BorderView" customModule="Ebates" customModuleProvider="target">
+                    <rect key="frame" x="55" y="218.5" width="265" height="250.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5o-nm-xp8">
+                            <rect key="frame" x="57.5" y="0.0" width="150" height="150"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-rj-B3O">
+                                    <rect key="frame" x="36" y="39" width="79" height="73"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="73" id="L0A-Xb-raf"/>
+                                        <constraint firstAttribute="width" constant="79" id="ufP-i9-2TP"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="Eys-RR-xaf"/>
+                                <constraint firstItem="hwJ-rj-B3O" firstAttribute="centerY" secondItem="E5o-nm-xp8" secondAttribute="centerY" id="KEo-uG-q5Y"/>
+                                <constraint firstItem="hwJ-rj-B3O" firstAttribute="centerX" secondItem="E5o-nm-xp8" secondAttribute="centerX" id="L3V-xx-urO"/>
+                                <constraint firstAttribute="width" constant="150" id="aXy-LC-cpK"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submitting your Panel Information…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFi-o7-Kft">
+                            <rect key="frame" x="30" y="158" width="205" height="42.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BFi-o7-Kft" firstAttribute="top" secondItem="E5o-nm-xp8" secondAttribute="bottom" constant="8" id="2dt-0B-a9c"/>
+                        <constraint firstItem="BFi-o7-Kft" firstAttribute="centerX" secondItem="yFu-fV-D8l" secondAttribute="centerX" id="Hj2-k1-D4b"/>
+                        <constraint firstItem="E5o-nm-xp8" firstAttribute="top" secondItem="yFu-fV-D8l" secondAttribute="top" id="PPx-po-hN8"/>
+                        <constraint firstAttribute="trailing" secondItem="BFi-o7-Kft" secondAttribute="trailing" constant="30" id="RYh-5q-D9K"/>
+                        <constraint firstAttribute="width" constant="265" id="UKw-5H-b7N"/>
+                        <constraint firstAttribute="bottom" secondItem="BFi-o7-Kft" secondAttribute="bottom" constant="50" id="bfb-OJ-Qgl"/>
+                        <constraint firstItem="BFi-o7-Kft" firstAttribute="leading" secondItem="yFu-fV-D8l" secondAttribute="leading" constant="30" id="zlf-bP-sK2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yFu-fV-D8l" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DrF-fk-btG"/>
+                <constraint firstItem="yFu-fV-D8l" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Xdr-Fj-DTF"/>
+                <constraint firstItem="E5o-nm-xp8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gbe-WJ-hEu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-148.5" y="17.5"/>
+        </view>
+    </objects>
+</document>

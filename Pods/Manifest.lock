@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.8.2)
+  - GSKStretchyHeaderView (1.0.4)
+  - IQKeyboardManagerSwift (6.3.0)
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
+  - SDWebImage (5.0.4):
+    - SDWebImage/Core (= 5.0.4)
+  - SDWebImage/Core (5.0.4)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - GSKStretchyHeaderView
+  - IQKeyboardManagerSwift
+  - Material (~> 2.16.4)
+  - SDWebImage
+  - SwiftyJSON (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - GSKStretchyHeaderView
+    - IQKeyboardManagerSwift
+    - Material
+    - Motion
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  GSKStretchyHeaderView: 9743704c12bdc9cf7c7947bad3af8bf24f7061e3
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  SDWebImage: c739016e4bdf0a4a1f9a04b5e0385395ad63a282
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 786c7f853426849e2d280e6e28a922ccf2daee0e
+
+COCOAPODS: 1.5.3
