@@ -12,7 +12,7 @@ import SDWebImage
 class HomeViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    private let columnLayout = FlowLayout()
+    private let columnLayout = HorizontalFlowLayout()
     var items: [ItemViewModel] = []
     private let hotkeyQueue = DispatchQueue(label: "HOTKEY_QUEUE")
     

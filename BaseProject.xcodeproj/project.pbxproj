@@ -25,7 +25,7 @@
 		FA867B9622B1FD2500148A24 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9522B1FD2500148A24 /* Item.swift */; };
 		FA867B9922B1FDBB00148A24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9722B1FDBB00148A24 /* HomeViewController.swift */; };
 		FA867B9A22B1FDBB00148A24 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA867B9822B1FDBB00148A24 /* HomeViewController.xib */; };
-		FA867BA022B202A500148A24 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9F22B202A500148A24 /* FlowLayout.swift */; };
+		FA867BA022B202A500148A24 /* HorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9F22B202A500148A24 /* HorizontalFlowLayout.swift */; };
 		FA867BA322B2037100148A24 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867BA122B2037100148A24 /* ItemCollectionViewCell.swift */; };
 		FA867BA422B2037100148A24 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA867BA222B2037100148A24 /* ItemCollectionViewCell.xib */; };
 		FAD00E39229E439B00A911AC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD00E35229E439B00A911AC /* Constant.swift */; };
@@ -127,7 +127,7 @@
 		FA867B9522B1FD2500148A24 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FA867B9722B1FDBB00148A24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA867B9822B1FDBB00148A24 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		FA867B9F22B202A500148A24 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		FA867B9F22B202A500148A24 /* HorizontalFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFlowLayout.swift; sourceTree = "<group>"; };
 		FA867BA122B2037100148A24 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA867BA222B2037100148A24 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		FAD00E35229E439B00A911AC /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -338,12 +338,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		FA867B9E22B2029300148A24 /* FlowLayout */ = {
+		FA867B9E22B2029300148A24 /* HorizontalFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				FA867B9F22B202A500148A24 /* FlowLayout.swift */,
+				FA867B9F22B202A500148A24 /* HorizontalFlowLayout.swift */,
 			);
-			path = FlowLayout;
+			path = HorizontalFlowLayout;
 			sourceTree = "<group>";
 		};
 		FAD00E34229E438F00A911AC /* Application */ = {
@@ -359,7 +359,7 @@
 		FAD00E52229E444000A911AC /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				FA867B9E22B2029300148A24 /* FlowLayout */,
+				FA867B9E22B2029300148A24 /* HorizontalFlowLayout */,
 				FA867B8A22AE3D8300148A24 /* LoadMore+PushRequest */,
 				FAD00E73229E444F00A911AC /* AutoComplete */,
 				FAD00E5C229E444E00A911AC /* CropViewController */,
@@ -780,7 +780,7 @@
 				FAD00E8F229E444F00A911AC /* HUDViewController.swift in Sources */,
 				FAD00ECA229E44CA00A911AC /* UITextFieldExtension.swift in Sources */,
 				FAD00E9D229E444F00A911AC /* AutoCompleteCell.swift in Sources */,
-				FA867BA022B202A500148A24 /* FlowLayout.swift in Sources */,
+				FA867BA022B202A500148A24 /* HorizontalFlowLayout.swift in Sources */,
 				FAD00E87229E444F00A911AC /* UIImage+Crop.swift in Sources */,
 				FAD00E9B229E444F00A911AC /* TableViewDelegate.swift in Sources */,
 				FAD00E91229E444F00A911AC /* SwiftWebViewProgress.swift in Sources */,

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FlowLayout: UICollectionViewFlowLayout {
+class HorizontalFlowLayout: UICollectionViewFlowLayout {
     
     override init() {
         super.init()
