@@ -38,7 +38,6 @@ public extension UIScrollView {
             let size = CGSize(width: self.frame.size.width, height: pullToRefreshDefaultHeight)
             let frame = CGRect(origin: origin, size: size)
             pullToRefreshView = PullToRefreshView(direction: direction, action: action, frame: frame)
-
         } else {
             let origin = CGPoint(x: -pullToRefreshDefaultHeight, y: 0)
             let size = CGSize(width: pullToRefreshDefaultHeight, height: self.frame.size.height)
@@ -53,10 +52,10 @@ public extension UIScrollView {
                                  action: @escaping (() -> ())) {
         if direction == .Vertical {
             let frame = CGRect(x: 0, y: -height, width: self.frame.size.width, height: height)
-            pullToRefreshView = PullToRefreshView(action: action, frame: frame, animator: animator)
+            pullToRefreshView = PullToRefreshView(direction: direction, action: action, frame: frame, animator: animator)
         } else {
-            let frame = CGRect(x: -height, y: 0, width: height, height: self.frame.size.width)
-            pullToRefreshView = PullToRefreshView(action: action, frame: frame, animator: animator)
+            let frame = CGRect(x: -height, y: 0, width: height, height: self.frame.size.height)
+            pullToRefreshView = PullToRefreshView(direction: direction, action: action, frame: frame, animator: animator)
         }
         addSubview(pullToRefreshView!)
     }

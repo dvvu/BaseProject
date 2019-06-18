@@ -52,26 +52,31 @@ public class PullToRefreshView: UIView {
 
     convenience init(direction: LoadMoreDirection, action: @escaping (() -> ()), frame: CGRect) {
         var bounds = frame
-        bounds.origin.y = 0
+        if direction == .Vertical {
+            bounds.origin.y = 0
+        } else {
+            bounds.origin.x = 0
+        }
+        
         let animator = PullToRefreshAnimator(frame: bounds)
-        self.init(frame: frame, animator: animator)
+        self.init(direction: direction,frame: frame, animator: animator)
         self.loadMoreDirection = direction
-        animator.loadMoreDirection = direction
+        self.backgroundColor = UIColor.yellow
         self.action = action
         addSubview(animator)
     }
 
-    convenience init(action: @escaping (() -> ()), frame: CGRect, animator: PullToRefreshDelegate & UIView) {
-        self.init(frame: frame, animator: animator)
+    convenience init(direction: LoadMoreDirection, action: @escaping (() -> ()), frame: CGRect, animator: PullToRefreshDelegate & UIView) {
+        self.init(direction: direction, frame: frame, animator: animator)
         self.action = action
         animator.frame = bounds
         addSubview(animator)
     }
 
-    public init(frame: CGRect, animator: PullToRefreshDelegate & UIView) {
+    public init(direction: LoadMoreDirection, frame: CGRect, animator: PullToRefreshDelegate & UIView) {
         self.animator = animator
         super.init(frame: frame)
-        if loadMoreDirection == .Vertical {
+        if direction == .Vertical {
             self.autoresizingMask = .flexibleWidth
         } else {
             self.autoresizingMask = .flexibleHeight

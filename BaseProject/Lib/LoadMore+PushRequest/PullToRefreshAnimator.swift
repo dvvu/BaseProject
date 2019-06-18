@@ -11,12 +11,11 @@ import UIKit
 open class PullToRefreshAnimator: UIView, PullToRefreshDelegate {
 
     open var spinner = UIActivityIndicatorView(style: .gray)
-    var loadMoreDirection: LoadMoreDirection = .Vertical
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         autoresizingMask = .flexibleWidth
-
+        self.backgroundColor = UIColor.blue
         addSubview(spinner)
         spinner.isHidden = true
     }
@@ -27,11 +26,7 @@ open class PullToRefreshAnimator: UIView, PullToRefreshDelegate {
 
     open override func layoutSubviews() {
         super.layoutSubviews()
-        if loadMoreDirection == .Vertical {
-            spinner.center = CGPoint(x: frame.size.width * 0.5, y: frame.size.height * 0.5)
-        } else {
-            spinner.center = CGPoint(x: frame.size.width * 1.5, y: frame.size.height * 0.5)
-        }
+         spinner.center = CGPoint(x: frame.size.width * 0.5, y: frame.size.height * 0.5)
     }
 
     open func pullToRefresh(_ view: PullToRefreshView, stateDidChange state: PullToRefreshState) {

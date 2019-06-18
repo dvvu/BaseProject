@@ -17,11 +17,11 @@
 		FA261F6122B3476C00291A74 /* loadingActivity.gif in Resources */ = {isa = PBXBuildFile; fileRef = FA261F6022B3476B00291A74 /* loadingActivity.gif */; };
 		FA261FA422B3814100291A74 /* BaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261FA322B3814100291A74 /* BaseProjectUITests.swift */; };
 		FA53B4C1223635AD00A374FD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53B4C0223635AD00A374FD /* BaseViewController.swift */; };
-		FA867B9022AE3D9900148A24 /* PullToRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B8B22AE3D9900148A24 /* PullToRefreshAnimator.swift */; };
-		FA867B9122AE3D9900148A24 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B8C22AE3D9900148A24 /* UIScrollView+Extensions.swift */; };
-		FA867B9222AE3D9900148A24 /* LoadMoreViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B8D22AE3D9900148A24 /* LoadMoreViewAnimator.swift */; };
-		FA867B9322AE3D9900148A24 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B8E22AE3D9900148A24 /* PullToRefresh.swift */; };
-		FA867B9422AE3D9900148A24 /* LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B8F22AE3D9900148A24 /* LoadMore.swift */; };
+		FA7E7CEF22B8997500316F3B /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CEA22B8997500316F3B /* UIScrollView+Extensions.swift */; };
+		FA7E7CF022B8997500316F3B /* LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CEB22B8997500316F3B /* LoadMore.swift */; };
+		FA7E7CF122B8997500316F3B /* PullToRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CEC22B8997500316F3B /* PullToRefreshAnimator.swift */; };
+		FA7E7CF222B8997500316F3B /* LoadMoreViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CED22B8997500316F3B /* LoadMoreViewAnimator.swift */; };
+		FA7E7CF322B8997500316F3B /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CEE22B8997500316F3B /* PullToRefresh.swift */; };
 		FA867B9622B1FD2500148A24 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9522B1FD2500148A24 /* Item.swift */; };
 		FA867B9922B1FDBB00148A24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9722B1FDBB00148A24 /* HomeViewController.swift */; };
 		FA867B9A22B1FDBB00148A24 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA867B9822B1FDBB00148A24 /* HomeViewController.xib */; };
@@ -119,11 +119,11 @@
 		FA261FA322B3814100291A74 /* BaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectUITests.swift; sourceTree = "<group>"; };
 		FA261FA522B3814100291A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA53B4C0223635AD00A374FD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		FA867B8B22AE3D9900148A24 /* PullToRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshAnimator.swift; sourceTree = "<group>"; };
-		FA867B8C22AE3D9900148A24 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
-		FA867B8D22AE3D9900148A24 /* LoadMoreViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreViewAnimator.swift; sourceTree = "<group>"; };
-		FA867B8E22AE3D9900148A24 /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
-		FA867B8F22AE3D9900148A24 /* LoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMore.swift; sourceTree = "<group>"; };
+		FA7E7CEA22B8997500316F3B /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
+		FA7E7CEB22B8997500316F3B /* LoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMore.swift; sourceTree = "<group>"; };
+		FA7E7CEC22B8997500316F3B /* PullToRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshAnimator.swift; sourceTree = "<group>"; };
+		FA7E7CED22B8997500316F3B /* LoadMoreViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreViewAnimator.swift; sourceTree = "<group>"; };
+		FA7E7CEE22B8997500316F3B /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		FA867B9522B1FD2500148A24 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FA867B9722B1FDBB00148A24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA867B9822B1FDBB00148A24 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -302,11 +302,11 @@
 		FA867B8A22AE3D8300148A24 /* LoadMore+PushRequest */ = {
 			isa = PBXGroup;
 			children = (
-				FA867B8F22AE3D9900148A24 /* LoadMore.swift */,
-				FA867B8D22AE3D9900148A24 /* LoadMoreViewAnimator.swift */,
-				FA867B8E22AE3D9900148A24 /* PullToRefresh.swift */,
-				FA867B8B22AE3D9900148A24 /* PullToRefreshAnimator.swift */,
-				FA867B8C22AE3D9900148A24 /* UIScrollView+Extensions.swift */,
+				FA7E7CEB22B8997500316F3B /* LoadMore.swift */,
+				FA7E7CED22B8997500316F3B /* LoadMoreViewAnimator.swift */,
+				FA7E7CEE22B8997500316F3B /* PullToRefresh.swift */,
+				FA7E7CEC22B8997500316F3B /* PullToRefreshAnimator.swift */,
+				FA7E7CEA22B8997500316F3B /* UIScrollView+Extensions.swift */,
 			);
 			path = "LoadMore+PushRequest";
 			sourceTree = "<group>";
@@ -749,6 +749,7 @@
 				FAD00E8C229E444F00A911AC /* pasteboard.swift in Sources */,
 				FAD00ED5229E44CA00A911AC /* Reuseable.swift in Sources */,
 				FAD00ED4229E44CA00A911AC /* UIColorExtensions.swift in Sources */,
+				FA7E7CF322B8997500316F3B /* PullToRefresh.swift in Sources */,
 				FAD00E99229E444F00A911AC /* TableViewDatasource.swift in Sources */,
 				FAD00E39229E439B00A911AC /* Constant.swift in Sources */,
 				FAD00E97229E444F00A911AC /* Autocomplete.swift in Sources */,
@@ -763,18 +764,16 @@
 				FAD00ECF229E44CA00A911AC /* URLExtensions.swift in Sources */,
 				FAD00E8A229E444F00A911AC /* CropViewController.swift in Sources */,
 				FAD00E82229E444F00A911AC /* SVDialogViewController.swift in Sources */,
+				FA7E7CEF22B8997500316F3B /* UIScrollView+Extensions.swift in Sources */,
 				FAD00E8B229E444F00A911AC /* CropRectView.swift in Sources */,
 				FAD00EC8229E44CA00A911AC /* LocalizeExtensions.swift in Sources */,
 				FA15321D222E761F0032E7F4 /* ViewController.swift in Sources */,
 				FA867B9922B1FDBB00148A24 /* HomeViewController.swift in Sources */,
 				FAD00E3A229E439B00A911AC /* AppDelegate.swift in Sources */,
-				FA867B9022AE3D9900148A24 /* PullToRefreshAnimator.swift in Sources */,
 				FAD00EC6229E44CA00A911AC /* DeivceExtensions.swift in Sources */,
-				FA867B9322AE3D9900148A24 /* PullToRefresh.swift in Sources */,
 				FAD00E84229E444F00A911AC /* EasyTipView.swift in Sources */,
 				FAD00ED3229E44CA00A911AC /* BorderView.swift in Sources */,
 				FAD00EC7229E44CA00A911AC /* UIButtonExtension.swift in Sources */,
-				FA867B9122AE3D9900148A24 /* UIScrollView+Extensions.swift in Sources */,
 				FAD00EAD229E448F00A911AC /* NetworkManager.swift in Sources */,
 				FA53B4C1223635AD00A374FD /* BaseViewController.swift in Sources */,
 				FAD00E89229E444F00A911AC /* ResizeControl.swift in Sources */,
@@ -790,17 +789,18 @@
 				FAD00E94229E444F00A911AC /* TTGSnackbar.swift in Sources */,
 				FAD00ED0229E44CA00A911AC /* UIViewExtensions.swift in Sources */,
 				FAD00ECD229E44CA00A911AC /* ImageExtension.swift in Sources */,
-				FA867B9222AE3D9900148A24 /* LoadMoreViewAnimator.swift in Sources */,
 				FA867BA322B2037100148A24 /* ItemCollectionViewCell.swift in Sources */,
 				FAD00E8D229E444F00A911AC /* SlideMenuController.swift in Sources */,
 				FAD00E85229E444F00A911AC /* UIKitExtensions.swift in Sources */,
 				FAD00E98229E444F00A911AC /* AutocompleteCellData.swift in Sources */,
 				FAD00ECC229E44CA00A911AC /* UIViewControllerExtension.swift in Sources */,
+				FA7E7CF122B8997500316F3B /* PullToRefreshAnimator.swift in Sources */,
+				FA7E7CF022B8997500316F3B /* LoadMore.swift in Sources */,
+				FA7E7CF222B8997500316F3B /* LoadMoreViewAnimator.swift in Sources */,
 				FAD00ED6229E44CA00A911AC /* NibLoadable.swift in Sources */,
 				FAD00ED2229E44CA00A911AC /* DateExtensions.swift in Sources */,
 				FAD00ECE229E44CA00A911AC /* TimeIntervalExtensions.swift in Sources */,
 				FAD00E95229E444F00A911AC /* AutocompleteDelegate.swift in Sources */,
-				FA867B9422AE3D9900148A24 /* LoadMore.swift in Sources */,
 				FAD00E9E229E444F00A911AC /* FloatLabelTextView.swift in Sources */,
 				FAD00ED7229E44CA00A911AC /* Localize.swift in Sources */,
 				FAD00E93229E444F00A911AC /* APJTextPickerView.swift in Sources */,
