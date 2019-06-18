@@ -23,6 +23,10 @@
 		FA7E7CF222B8997500316F3B /* LoadMoreViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CED22B8997500316F3B /* LoadMoreViewAnimator.swift */; };
 		FA7E7CF322B8997500316F3B /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CEE22B8997500316F3B /* PullToRefresh.swift */; };
 		FA7E7D1C22B8BAE100316F3B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA7E7D1A22B8BAE100316F3B /* Localizable.strings */; };
+		FA7E7D2422B8BDF400316F3B /* DatastoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7D2122B8BDF400316F3B /* DatastoreCoordinator.swift */; };
+		FA7E7D2522B8BDF400316F3B /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7D2222B8BDF400316F3B /* PersistenceManager.swift */; };
+		FA7E7D2622B8BDF400316F3B /* ContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7D2322B8BDF400316F3B /* ContextManager.swift */; };
+		FA7E7D2822B8C38C00316F3B /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7D2722B8C38C00316F3B /* EventAPI.swift */; };
 		FA867B9622B1FD2500148A24 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9522B1FD2500148A24 /* Item.swift */; };
 		FA867B9922B1FDBB00148A24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA867B9722B1FDBB00148A24 /* HomeViewController.swift */; };
 		FA867B9A22B1FDBB00148A24 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA867B9822B1FDBB00148A24 /* HomeViewController.xib */; };
@@ -129,6 +133,10 @@
 		FA7E7D1D22B8BAF700316F3B /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
 		FA7E7D1E22B8BAF700316F3B /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FA7E7D1F22B8BAF700316F3B /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = BaseProject/vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA7E7D2122B8BDF400316F3B /* DatastoreCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatastoreCoordinator.swift; sourceTree = "<group>"; };
+		FA7E7D2222B8BDF400316F3B /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		FA7E7D2322B8BDF400316F3B /* ContextManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextManager.swift; sourceTree = "<group>"; };
+		FA7E7D2722B8C38C00316F3B /* EventAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAPI.swift; sourceTree = "<group>"; };
 		FA867B9522B1FD2500148A24 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FA867B9722B1FDBB00148A24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA867B9822B1FDBB00148A24 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -304,6 +312,17 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		FA7E7D2022B8BC2D00316F3B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FA7E7D2322B8BDF400316F3B /* ContextManager.swift */,
+				FA7E7D2122B8BDF400316F3B /* DatastoreCoordinator.swift */,
+				FA7E7D2222B8BDF400316F3B /* PersistenceManager.swift */,
+				FA7E7D2722B8C38C00316F3B /* EventAPI.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		FA867B8A22AE3D8300148A24 /* LoadMore+PushRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +383,7 @@
 		FAD00E52229E444000A911AC /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				FA7E7D2022B8BC2D00316F3B /* CoreData */,
 				FA867B9E22B2029300148A24 /* HorizontalFlowLayout */,
 				FA867B8A22AE3D8300148A24 /* LoadMore+PushRequest */,
 				FAD00E73229E444F00A911AC /* AutoComplete */,
@@ -767,6 +787,9 @@
 				FAD00E90229E444F00A911AC /* SwiftWebViewProgressView.swift in Sources */,
 				EAAB93B222B294BC006DE5FE /* ItemViewModel.swift in Sources */,
 				FAD00E92229E444F00A911AC /* Configuration.swift in Sources */,
+				FA7E7D2422B8BDF400316F3B /* DatastoreCoordinator.swift in Sources */,
+				FA7E7D2622B8BDF400316F3B /* ContextManager.swift in Sources */,
+				FA7E7D2522B8BDF400316F3B /* PersistenceManager.swift in Sources */,
 				FAD00E9F229E444F00A911AC /* FloatLabelTextField.swift in Sources */,
 				FAD00ECB229E44CA00A911AC /* StringExtensions.swift in Sources */,
 				FAD00ECF229E44CA00A911AC /* URLExtensions.swift in Sources */,
@@ -806,6 +829,7 @@
 				FA7E7CF022B8997500316F3B /* LoadMore.swift in Sources */,
 				FA7E7CF222B8997500316F3B /* LoadMoreViewAnimator.swift in Sources */,
 				FAD00ED6229E44CA00A911AC /* NibLoadable.swift in Sources */,
+				FA7E7D2822B8C38C00316F3B /* EventAPI.swift in Sources */,
 				FAD00ED2229E44CA00A911AC /* DateExtensions.swift in Sources */,
 				FAD00ECE229E44CA00A911AC /* TimeIntervalExtensions.swift in Sources */,
 				FAD00E95229E444F00A911AC /* AutocompleteDelegate.swift in Sources */,
