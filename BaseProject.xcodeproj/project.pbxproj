@@ -16,6 +16,10 @@
 		FA153225222E76210032E7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA153223222E76210032E7F4 /* LaunchScreen.storyboard */; };
 		FA261F6122B3476C00291A74 /* loadingActivity.gif in Resources */ = {isa = PBXBuildFile; fileRef = FA261F6022B3476B00291A74 /* loadingActivity.gif */; };
 		FA261FA422B3814100291A74 /* BaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261FA322B3814100291A74 /* BaseProjectUITests.swift */; };
+		FA321C0722BCB25700AA79C2 /* BaseMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA321C0622BCB25700AA79C2 /* BaseMO.swift */; };
+		FA321C0A22BCB33D00AA79C2 /* CoreDataBaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA321C0922BCB33D00AA79C2 /* CoreDataBaseAPI.swift */; };
+		FA321C0C22BCB43100AA79C2 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA321C0B22BCB43100AA79C2 /* APIProtocol.swift */; };
+		FA321C1722BCCEE900AA79C2 /* BaseCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA321C1522BCCEE900AA79C2 /* BaseCoreData.xcdatamodeld */; };
 		FA53B4C1223635AD00A374FD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53B4C0223635AD00A374FD /* BaseViewController.swift */; };
 		FA7E7CEF22B8997500316F3B /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CEA22B8997500316F3B /* UIScrollView+Extensions.swift */; };
 		FA7E7CF022B8997500316F3B /* LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E7CEB22B8997500316F3B /* LoadMore.swift */; };
@@ -123,6 +127,10 @@
 		FA261FA122B3814100291A74 /* BaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA261FA322B3814100291A74 /* BaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectUITests.swift; sourceTree = "<group>"; };
 		FA261FA522B3814100291A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA321C0622BCB25700AA79C2 /* BaseMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMO.swift; sourceTree = "<group>"; };
+		FA321C0922BCB33D00AA79C2 /* CoreDataBaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBaseAPI.swift; sourceTree = "<group>"; };
+		FA321C0B22BCB43100AA79C2 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		FA321C1622BCCEE900AA79C2 /* BaseCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BaseCoreData.xcdatamodel; sourceTree = "<group>"; };
 		FA53B4C0223635AD00A374FD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FA7E7CEA22B8997500316F3B /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		FA7E7CEB22B8997500316F3B /* LoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMore.swift; sourceTree = "<group>"; };
@@ -285,6 +293,7 @@
 				EAAB93B022B29494006DE5FE /* ViewModel */,
 				FAD00EA1229E445B00A911AC /* Model */,
 				FAD00E34229E438F00A911AC /* Application */,
+				FA321C0822BCB30E00AA79C2 /* CoreDatAPI */,
 				FA53B395222F6DAE00A374FD /* Scenes */,
 				FA15321C222E761F0032E7F4 /* ViewController.swift */,
 				FA15321E222E761F0032E7F4 /* Main.storyboard */,
@@ -301,6 +310,23 @@
 				FA261FA522B3814100291A74 /* Info.plist */,
 			);
 			path = BaseProjectUITests;
+			sourceTree = "<group>";
+		};
+		FA321C0522BCB23C00AA79C2 /* BaseMO */ = {
+			isa = PBXGroup;
+			children = (
+				FA321C0622BCB25700AA79C2 /* BaseMO.swift */,
+			);
+			path = BaseMO;
+			sourceTree = "<group>";
+		};
+		FA321C0822BCB30E00AA79C2 /* CoreDatAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FA321C0B22BCB43100AA79C2 /* APIProtocol.swift */,
+				FA321C0922BCB33D00AA79C2 /* CoreDataBaseAPI.swift */,
+			);
+			path = CoreDatAPI;
 			sourceTree = "<group>";
 		};
 		FA53B395222F6DAE00A374FD /* Scenes */ = {
@@ -538,6 +564,7 @@
 		FAD00EA1229E445B00A911AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA321C0522BCB23C00AA79C2 /* BaseMO */,
 				FA867B9522B1FD2500148A24 /* Item.swift */,
 			);
 			path = Model;
@@ -606,6 +633,7 @@
 				FA7E7D1A22B8BAE100316F3B /* Localizable.strings */,
 				FA261F6022B3476B00291A74 /* loadingActivity.gif */,
 				FA153221222E76210032E7F4 /* Assets.xcassets */,
+				FA321C1522BCCEE900AA79C2 /* BaseCoreData.xcdatamodeld */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -779,6 +807,7 @@
 				FAD00ED4229E44CA00A911AC /* UIColorExtensions.swift in Sources */,
 				FA7E7CF322B8997500316F3B /* PullToRefresh.swift in Sources */,
 				FAD00E99229E444F00A911AC /* TableViewDatasource.swift in Sources */,
+				FA321C1722BCCEE900AA79C2 /* BaseCoreData.xcdatamodeld in Sources */,
 				FAD00E39229E439B00A911AC /* Constant.swift in Sources */,
 				FAD00E97229E444F00A911AC /* Autocomplete.swift in Sources */,
 				FAD00E9C229E444F00A911AC /* AutoCompleteViewController.swift in Sources */,
@@ -795,6 +824,7 @@
 				FAD00ECF229E44CA00A911AC /* URLExtensions.swift in Sources */,
 				FAD00E8A229E444F00A911AC /* CropViewController.swift in Sources */,
 				FAD00E82229E444F00A911AC /* SVDialogViewController.swift in Sources */,
+				FA321C0722BCB25700AA79C2 /* BaseMO.swift in Sources */,
 				FA7E7CEF22B8997500316F3B /* UIScrollView+Extensions.swift in Sources */,
 				FAD00E8B229E444F00A911AC /* CropRectView.swift in Sources */,
 				FAD00EC8229E44CA00A911AC /* LocalizeExtensions.swift in Sources */,
@@ -816,6 +846,7 @@
 				FAD00E9B229E444F00A911AC /* TableViewDelegate.swift in Sources */,
 				FAD00E91229E444F00A911AC /* SwiftWebViewProgress.swift in Sources */,
 				FA867B9622B1FD2500148A24 /* Item.swift in Sources */,
+				FA321C0C22BCB43100AA79C2 /* APIProtocol.swift in Sources */,
 				FAD00E88229E444F00A911AC /* CropView.swift in Sources */,
 				FAD00E94229E444F00A911AC /* TTGSnackbar.swift in Sources */,
 				FAD00ED0229E44CA00A911AC /* UIViewExtensions.swift in Sources */,
@@ -823,6 +854,7 @@
 				FA867BA322B2037100148A24 /* ItemCollectionViewCell.swift in Sources */,
 				FAD00E8D229E444F00A911AC /* SlideMenuController.swift in Sources */,
 				FAD00E85229E444F00A911AC /* UIKitExtensions.swift in Sources */,
+				FA321C0A22BCB33D00AA79C2 /* CoreDataBaseAPI.swift in Sources */,
 				FAD00E98229E444F00A911AC /* AutocompleteCellData.swift in Sources */,
 				FAD00ECC229E44CA00A911AC /* UIViewControllerExtension.swift in Sources */,
 				FA7E7CF122B8997500316F3B /* PullToRefreshAnimator.swift in Sources */,
@@ -1117,6 +1149,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA321C1522BCCEE900AA79C2 /* BaseCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA321C1622BCCEE900AA79C2 /* BaseCoreData.xcdatamodel */,
+			);
+			currentVersion = FA321C1622BCCEE900AA79C2 /* BaseCoreData.xcdatamodel */;
+			path = BaseCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FA15320F222E761F0032E7F4 /* Project object */;
 }

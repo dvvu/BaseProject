@@ -15,6 +15,7 @@ class HomeViewController: BaseViewController {
     private let columnLayout = HorizontalFlowLayout()
     var items: [ItemViewModel] = []
     private let hotkeyQueue = DispatchQueue(label: "HOTKEY_QUEUE")
+    fileprivate var eventAPI = CoreDataBaseAPI()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class HomeViewController: BaseViewController {
         collectionView.addPullToRefresh(direction: .Horizontal, action: { [weak self] in
             self?.handleRefresh()
         })
+        let item = BaseMO(id: "id2", title: "user2", date: Date())
+        eventAPI.saveObject(item)
     }
     
     private func handleLoadMore() {
