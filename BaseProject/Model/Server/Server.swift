@@ -1,8 +1,8 @@
 //
-//  BaseMO.swift
+//  Server.swift
 //  BaseProject
 //
-//  Created by Macbook on 6/21/19.
+//  Created by Macbook on 6/26/19.
 //  Copyright © 2019 translate.com. All rights reserved.
 //
 
@@ -10,29 +10,25 @@ import Foundation
 import CoreData
 
 // this have all name off colum
-enum BaseMOAttributes: String {
+enum ServerMOAttributes: String {
     case
-    entityName = "User", // name off entity
-    id = "id",
+    entityName = "Server", // name off entity
     title = "title",
-    date = "date"
+    host = "host"
     
     static let getAll = [
-        id,
         title,
-        date,
+        host,
         ]
 }
 
-@objc(BaseMO)
+@objc(ServerMO)
 
-class BaseMO: NSManagedObject {
-    @NSManaged var id: String?
+class ServerMO: NSManagedObject {
     @NSManaged var title: String?
-    @NSManaged var date: Date?
+    @NSManaged var host: String?
     
     convenience init() {
         self.init(context: EventAPI.sharedInstance.mainContextInstance)
     }
 }
-

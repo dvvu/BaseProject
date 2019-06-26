@@ -19,18 +19,40 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configrueUI()
-        self.configData()
-        
-        collectionView.addLoadMore(direction: .Horizontal, action: { [weak self] in
-            self?.handleLoadMore()
-        })
-        
-        collectionView.addPullToRefresh(direction: .Horizontal, action: { [weak self] in
-            self?.handleRefresh()
-        })
-        let item = BaseMO(id: "id2", title: "user2", date: Date())
+//        self.configrueUI()
+//        self.configData()
+//
+//        collectionView.addLoadMore(direction: .Horizontal, action: { [weak self] in
+//            self?.handleLoadMore()
+//        })
+//
+//        collectionView.addPullToRefresh(direction: .Horizontal, action: { [weak self] in
+//            self?.handleRefresh()
+//        })
+        let item = BaseMO()
+        item.title = "123"
         eventAPI.saveObject(item)
+        
+        //create the dispatch work item
+//        var dwi: DispatchWorkItem?
+//        dwi = DispatchWorkItem { //1
+//            for i in 1...5 {
+//                print("\(dwi?.isCancelled)")
+//                if (dwi?.isCancelled)! {
+//                    break
+//                }
+//                sleep(1)
+//                print("DispatchWorkItem : \(i)")
+//            }
+//        }
+//        //submit the work item to the default global queue
+//        DispatchQueue.global().async(execute: dwi!) //2
+//
+//        //cancelling the task after 3 seconds
+//        DispatchQueue.global().async { //3
+//            sleep(3)
+//            dwi?.cancel()
+//        }
     }
     
     private func handleLoadMore() {
